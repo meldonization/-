@@ -1,0 +1,11 @@
+{
+  "theme": "sky", 
+  "transition": "zoom", 
+  "leap_motion": {
+    "pointerOpacity": 0.5, 
+    "pointerColor": "#d80000", 
+    "naturalSwipe": true
+  }, 
+  "start_slideshow_at": "selected", 
+  "scroll": true
+}

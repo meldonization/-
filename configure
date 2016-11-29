@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# convert to 'Tea Nexus 2.slides.html':
+jupyter-nbconvert --to slides 'Tea Nexus 2.ipynb' --reveal-prefix=reveal.js
+
+# add reveal leap motion support:
+sed -i -e '/Reveal\.initialize/r leap.config' Tea\ Nexus\ 2.slides.html
+sed -i -e '/Reveal\.initialize/r general.config' Tea\ Nexus\ 2.slides.html
+sed -i -e '/dependencies/r leap.dep' Tea\ Nexus\ 2.slides.html
