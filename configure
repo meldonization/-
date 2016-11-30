@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # convert to 'Tea Nexus 2.slides.html':
+cp Tea\ Nexus\ 2.slides.html Tea\ Nexus\ 2.slides.html.bak
 rm Tea\ Nexus\ 2.slides.html*
 jupyter-nbconvert --to slides 'Tea Nexus 2.ipynb' --reveal-prefix=reveal.js
 
@@ -14,4 +15,8 @@ cp Tea\ Nexus\ 2.ipynb ~/Desktop/Tea\ Nexus\ 2/
 cp README.md livereveal.json leap.dep leap.config general.config configure ~/Desktop/Tea\ Nexus\ 2/
 
 cd ~/Desktop/Tea\ Nexus\ 2/
+git add *
 git push origin master
+git commit
+git push origin master
+cd -
